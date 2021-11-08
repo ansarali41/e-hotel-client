@@ -4,7 +4,7 @@ import ClientsFeedbackCard from '../ClientsFeedbackCard/ClientsFeedbackCard';
 const ClientsFeedback = () => {
     let [feedbacks, setFeedbacks] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/reviews')
+        fetch('https://tranquil-plains-08781.herokuapp.com/reviews')
             .then(response => response.json())
             .then(data => {
                 setFeedbacks(data);

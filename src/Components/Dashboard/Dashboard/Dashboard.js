@@ -11,7 +11,7 @@ const Dashboard = () => {
     const [isAdmin, setIsAdmin] = useState(false);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/isAdmin/${user.email}`)
+        fetch(`https://tranquil-plains-08781.herokuapp.com/isAdmin/${user.email}`)
             .then(res => res.json())
             .then(data => {
                 if (data.length) {

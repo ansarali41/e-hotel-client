@@ -33,7 +33,7 @@ const Order = ({ dashboard }) => {
         formData.append('title', title);
         formData.append('price', price);
 
-        fetch('http://localhost:5000/addOrder', {
+        fetch('https://tranquil-plains-08781.herokuapp.com/addOrder', {
             method: 'POST',
             body: formData,
         })
@@ -49,7 +49,7 @@ const Order = ({ dashboard }) => {
     };
 
     useEffect(() => {
-        fetch('http://localhost:5000/loadServices')
+        fetch('https://tranquil-plains-08781.herokuapp.com/loadServices')
             .then(response => response.json())
             .then(result => {
                 setAllServices(result);
