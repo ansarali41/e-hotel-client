@@ -1,0 +1,14 @@
+.nav-dropdown-container{
+    background: #FBD062;
+    
+}
+.dropdown-link{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+
+}
+.dropdown-link:hover{
+    background-color: rgb(223, 219, 219);
+    text-decoration: none;
+}

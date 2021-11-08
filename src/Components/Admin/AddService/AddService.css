@@ -1,0 +1,8 @@
+.add-service-form {
+  position: relative;
+}
+.add-service-form button {
+  position: absolute;
+  bottom: -50px;
+  right: 0px;
+}
